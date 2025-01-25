@@ -9,7 +9,7 @@
         <!-- Configuración de la Conexión -->
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/ebac_curso_biblioteca"/>
-            <property name="javax.persistence.jdbc.user" value=""/> <!--Agregar Usuario-->
+            <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value=""/> <!--Agregar Contraseña-->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
         </properties>
