@@ -27,6 +27,24 @@ public class Autor {
         this.libros = libros;
     }
 
+    //Getters
+    public int getAutor_id() {
+        return autor_id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getLibros() {
+        return libros;
+    }
+
+    //Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -39,6 +57,7 @@ public class Autor {
         this.libros = libros;
     }
 
+    //toString
     @Override
     public String toString() {
         return "Autor{" +
@@ -53,9 +72,8 @@ public class Autor {
     public static class AutorBuilder {
 
         private final String nombre;
-
         private String apellido = "Desconocido";
-        private int libros;
+        private int libros = 0;
 
         public AutorBuilder(String nombre) {
             this.nombre = nombre;
@@ -71,7 +89,7 @@ public class Autor {
             return this;
         }
 
-        public Autor build() throws Exception{
+        public Autor build() throws Exception {
             validarLibros();
             return new Autor(this.nombre, this.apellido, this.libros);
         }
@@ -81,7 +99,6 @@ public class Autor {
                 throw new Exception("Error: El número de libros no puede ser 0");
             }
         }
-
 
     }
 

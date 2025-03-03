@@ -19,6 +19,24 @@ public class Usuario {
     @Column(name = "edad")
     private int edad;
 
+    //Getters
+    public int getUsuario_id() {
+        return usuario_id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    //Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -32,6 +50,7 @@ public class Usuario {
     }
 
 
+    //toString
     @Override
     public String toString() {
         return "Usuario{" +
@@ -40,14 +59,5 @@ public class Usuario {
                 ", correo='" + correo + '\'' +
                 ", edad='" + edad + '\'' +
                 '}';
-    }
-
-    //Testing
-    public int getUsuario_id() {
-        return usuario_id;
-    }
-
-    public String getNombre() {
-        return nombre;
     }
 }

@@ -18,7 +18,7 @@ public class Contexto {
     private static EntityManagerFactory entityManagerFactory;
     private static EntityManager entityManager;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         entityManagerFactory = Persistence.createEntityManagerFactory("connectionLocalMySQL");
         entityManager = entityManagerFactory.createEntityManager();
 
@@ -162,7 +162,7 @@ public class Contexto {
         libro1.setIsbn("0044c");
 
         Libro libro2 = generadorLibros.generarLibro(TERROR);
-        libro2.setTitulo("Terro Bajo la Lluvia");
+        libro2.setTitulo("Terror Bajo la Lluvia");
         libro2.setAutor("Josefina");
         libro2.setPublicacion(2012);
         libro2.setIsbn("0055c");

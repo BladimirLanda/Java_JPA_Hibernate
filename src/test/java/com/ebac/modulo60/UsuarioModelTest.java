@@ -7,6 +7,8 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import org.junit.*;
 
+import java.util.Optional;
+
 import static org.junit.Assert.assertEquals;
 
 public class UsuarioModelTest {
@@ -27,6 +29,9 @@ public class UsuarioModelTest {
         usuario.setNombre("Bladimir");
         usuario.setCorreo("blad@correo.com");
         usuario.setEdad(18);
+
+        entityManager.close();
+        entityManagerFactory.close();
     }
 
     @Test

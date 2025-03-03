@@ -29,6 +29,32 @@ public class Libro {
         this.categoria = categoria;
     }
 
+    //Getters
+    public int getBook_id() {
+        return book_id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getPublicacion() {
+        return publicacion;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    //Setters
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -45,6 +71,7 @@ public class Libro {
         this.isbn = isbn;
     }
 
+    //toString
     @Override
     public String toString() {
         return "Libro{" +
