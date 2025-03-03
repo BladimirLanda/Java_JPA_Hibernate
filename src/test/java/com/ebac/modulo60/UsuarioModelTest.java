@@ -29,9 +29,6 @@ public class UsuarioModelTest {
         usuario.setNombre("Bladimir");
         usuario.setCorreo("blad@correo.com");
         usuario.setEdad(18);
-
-        entityManager.close();
-        entityManagerFactory.close();
     }
 
     @Test
